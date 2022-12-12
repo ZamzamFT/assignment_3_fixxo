@@ -1,0 +1,22 @@
+/* Globals */
+@import './globals/variables';
+@import './globals/resets';
+@import './globals/util';
+
+/* Components */
+@import './components/cardComponent';
+
+/* Layouts */
+@import './layouts/BreadCrumb';
+@import './layouts/FooterMenu';
+@import './layouts/NavBarMenu';
+
+/* Sections */
+@import './sections/FeaturedProducts';
+@import './sections/ShowCase';
+@import './sections/LatestBanner';
+@import './sections/FlashSale';
+@import './sections/DiscountSection';
+@import './components/ProductDetails';
+@import './components/ProductInformation';
+@import './sections/ShoppingCart';

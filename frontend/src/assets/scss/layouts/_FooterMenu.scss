@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 25px;
+  border: 1px solid #e3e5e8;
+
+  .socials {
+    margin-bottom: 25px;
+
+    a {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        color: $clr-light-red;
+      }
+    }
+  }
+
+  p {
+    color: #616365;
+  }
+}

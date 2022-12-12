@@ -1,0 +1,144 @@
+/* Global Styling Classes */
+/* Background-colors */
+
+.bg-primary {
+  background: linear-gradient(90deg, #e6e6e6 0%, #f5f5f5 100%);
+}
+.bg-accent {
+  background-color: $clr-light-red;
+}
+
+
+/* Text-colors */
+.clr-accent {
+  color: $clr-light-red;
+}
+.clr-primary {
+  color: $clr-dark;
+}
+
+/* Font_sizes */
+.fs-35 {
+  font-size: $fs-35;
+}
+
+.fs-13 {
+  font-size: $fs-13;
+}
+
+
+/* Font-Weight */
+.fw-bold {
+  font-weight: $fw-bold;
+}
+
+/* Section-titles */
+.heding_primery {
+  font-size: $fs-18;
+  font-weight: $fw-bold;
+  margin-bottom: 1.875rem;
+}
+
+.page_title {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  font-size: $fs-16;
+}
+
+/* widths */
+
+/* Buttons */
+/* Shop Now button Style  */
+.btn-theme {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: $clr-light-red;
+  color: $clr-white !important;
+  padding: 20px 50px;
+  transition: all 0.2s ease-in-out;
+  font-weight: $fw-semi-bold;
+
+  .corner-left {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+    border-left: 1px solid $clr-white;
+    border-top: 1px solid $clr-white;
+  }
+
+  .corner-right {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    bottom: 10px;
+    right: 10px;
+    border-right: 1px solid $clr-white;
+    border-bottom: 1px solid $clr-white;
+  }
+
+  &:hover {
+    color: $clr-white;
+    background-color: $clr-dark;
+  }
+}
+
+.btn-card-theme {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: $clr-white;
+}
+
+/* Final Sale Button Style */
+.sale-btn {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: $clr-white;
+  color: $clr-dark;
+  padding: 20px 50px;
+  transition: all 0.2s ease-in-out;
+  font-weight: $fw-semi-bold;
+
+  .corner-left {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+    border-left: 1px solid $clr-dark;
+    border-top: 1px solid $clr-dark;
+  }
+
+  .corner-right {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    bottom: 10px;
+    right: 10px;
+    border-right: 1px solid $clr-dark;
+    border-bottom: 1px solid $clr-dark;
+  }
+
+  &:hover {
+    color: $clr-white;
+    background-color: $clr-dark;
+
+    .corner-right {
+      border-right: 1px solid $clr-white;
+      border-bottom: 1px solid $clr-white;
+    }
+
+    .corner-left {
+      border-right: 1px solid $clr-white;
+      border-bottom: 1px solid $clr-white;
+    }
+  }
+}

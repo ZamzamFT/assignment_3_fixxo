@@ -1,0 +1,116 @@
+.Navbar {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'logo menuicons'
+      'menulinks menulinks';
+
+    .logo {
+      font-size: $fs-35;
+      font-weight: $fw-bold;
+      grid-area: logo;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .menu-links {
+      display: none;
+      grid-area: menulinks;
+      height: 100%;
+      font-weight: $fw-medium;
+      text-align: center;
+
+      .menu-link {
+        color: $clr-dark;
+        font-weight: $fw-medium;
+        margin: 15px 15px;
+
+        &:hover {
+          color: $clr-light-red;
+        }
+      }
+
+      .active {
+        color: $clr-light-red;
+      }
+    }
+
+    .menu-icons {
+      grid-area: menuicons;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .menu-icon {
+        background-color: $clr-white;
+        color: $clr-dark;
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-left: 1.25rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 0.375rem 0.313rem $clr-shadow;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $clr-white;
+          background-color: $clr-dark;
+          box-shadow: 0 0 0.375rem 0.313rem $clr-shadow;
+        }
+      }
+
+      .active {
+        color: $clr-white;
+        background-color: $clr-dark;
+        box-shadow: 0 0 0.375rem 0.313rem $clr-shadow;
+      }
+
+      .btn-menu-icon {
+        color: $clr-white;
+        background-color: $clr-dark;
+        border: none;
+        box-shadow: 0 0 0.375rem 0.313rem $clr-shadow;
+      }
+    }
+
+    button {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .Navbar {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 'logo menulinks menuicons';
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .menu-links {
+        grid-area: menulinks;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .menu-link {
+          color: $clr-dark;
+          font-weight: $fw-medium;
+        }
+
+        .active {
+          color: $clr-light-red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.flashSale {
+  margin-top: 80px;
+  .contianer {
+    background-color: $clr-dark-gray;
+    text-align: center;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+      color: $clr-white;
+      font-size: $fs-45;
+      font-weight: $fw-bold;
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    p {
+      color: $clr-white;
+      font-size: $fs-20;
+      font-weight: $fw-bold;
+      padding-bottom: 50px;
+    }
+
+    .spacing {
+      margin-top: 60px;
+      color: $clr-dark-gray;
+    }
+  }
+}

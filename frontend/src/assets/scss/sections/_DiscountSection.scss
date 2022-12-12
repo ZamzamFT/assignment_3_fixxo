@@ -1,0 +1,52 @@
+.section {
+    margin-top: 100px;
+    .flex-container {
+      h1 {
+        font-size: $fs-24;
+        font-weight: $fw-bold;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      .discount-info {
+        display: none;
+      }
+  
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .section {
+      display: flex;
+      margin-bottom: 60px;
+      margin-top: 60px;
+      max-width: 100%;
+      margin-left: 10rem;
+      margin-right: 10rem;
+  
+      .flex-container {
+        display: flex;
+        gap: 40px;
+  
+        h1 {
+          display: none;
+        }
+  
+        .discount-info {
+          display: block;
+          text-align: center;
+          background-color: $clr-gray;
+          text-align: center;
+          width: 825px;
+  
+          h2 {
+            color: $clr-white;
+            font-size: $fs-35;
+            padding-top: 257px;
+          }
+        }
+  
+      }
+    }
+  }
+  
